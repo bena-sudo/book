@@ -1,12 +1,10 @@
-name: Your github action
+name: Publish Jupyter Book
 
 on:
   push:
     branches:
-      # NOTE: You may want to limit the trigger branch to be "main" or "master" etc.
-      - '*'
+      - main
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   publish:
     permissions:
@@ -14,10 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        # You may use a newer version of https://github.com/actions/checkout
         uses: actions/checkout@v4
 
-      - name: Publish current workdir (which contains generated content) to GitHub Pages
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install Jupyter Book
+        run: pip install jupyter-book
+
+      - name: Build the book
+        run: jupyter-book build .
+
+      - name: Publish to GitHub Pages
         uses: rayluo/github-pages-overwriter@v1.3
         with:
           source-directory: _build/html/
