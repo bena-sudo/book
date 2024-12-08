@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 parts:
+  - caption: JavaScript
+    chapters:
+    - file: projectvanilla
   - caption: Angular
     chapters:
     - file: angular
+  - caption: Supabase
+    chapters:
+    - file: supabase
