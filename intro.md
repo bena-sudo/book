@@ -1,19 +1,48 @@
-# Introducción
+# Descripción General
 
-Este libro recopila los conocimientos y aprendizajes que he adquirido durante mi formación en el curso de **Desarrollo de Aplicaciones Web (DAW)**. Aquí encontrarás una síntesis de mis apuntes, centrados en dos de las tecnologías más destacadas del desarrollo web: **JavaScript** y **Angular**.
+Este repositorio es una recopilación integral de apuntes, ejemplos y recursos para el desarrollo con JavaScript, con un enfoque en herramientas y frameworks modernos como Vite, Angular y Supabase. Está estructurado como un proyecto de Jupyter Notebook, lo que permite un aprendizaje interactivo y la experimentación.
 
-El propósito de este libro es servir como un recurso de consulta personal, donde he documentado conceptos clave, buenas prácticas, ejemplos de código y mis reflexiones durante el proceso de aprendizaje. No pretende ser un manual exhaustivo, sino un compendio práctico y accesible que refleja mi evolución en estas tecnologías.
+## Contenidos
 
-## ¿Qué encontrarás aquí?
+- **Conceptos Básicos y Avanzados de JavaScript**: Principios clave, patrones y mejores prácticas.
+- **Vite**: Configuración, casos de uso y ejemplos de proyectos usando esta herramienta de construcción rápida.
+- **Angular**: Conceptos principales, desarrollo basado en componentes, servicios y enrutamiento.
+- **Supabase**: Integración de bases de datos, autenticación y APIs para aplicaciones web modernas.
 
-En este libro exploraremos:
+## Propósito
 
-- **JavaScript**: Desde conceptos básicos hasta técnicas avanzadas y patrones de diseño.
-- **Vite**: Cómo configurarlo y usarlo como una herramienta de construcción rápida y eficiente.
-- **Angular**: Los fundamentos del desarrollo basado en componentes, servicios y enrutamiento.
-- **Supabase**: Cómo integrar bases de datos, autenticación y APIs en aplicaciones web modernas.
+Este repositorio está destinado a:
+- Desarrolladores que buscan mejorar su comprensión de JavaScript y herramientas relacionadas.
+- Estudiantes explorando Vite, Angular o Supabase en contextos prácticos.
+- Cualquiera que desee construir una base de conocimiento o un portafolio con Jupyter Notebooks interactivos.
 
-Consulta las páginas de contenido incluidas en este libro.
+## Cómo Usarlo
 
-```{tableofcontents}
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/bena-sudo/book.git
+   ```
+2. Instala Jupyter Notebook o JupyterLab (si aún no lo tienes instalado).
+3. Instala Deno como intérprete:
+   ```bash
+   curl -fsSL https://deno.land/install.sh | sh
+   deno jupyter --unstable
+   deno jupyter --install
+   ```
+4. Abre los notebooks en Jupyter o Visual Studio Code con la extensión de Jupyter, seleccionando Deno como Kernel.
+
+## Construir el Libro para la Web
+
+1. Instala la herramienta necesaria:
+   ```bash
+   sudo pip install -U jupyter-book
+   ```
+2. Construye el libro:
+   ```bash
+   jupyter-book build .
+   ```
+
+Alternativamente, una versión preconstruida de este libro está disponible y se actualiza regularmente en:
+[GitHub Pages - Libro](https://bena-sudo.github.io/book/intro.html).
+
+Para publicar este libro, he utilizado GitHub Pages. El despliegue está automatizado con un GitHub Action desde la rama master. Los detalles del action están disponibles aquí: [GitHub Pages Overwriter](https://github.com/marketplace/actions/github-pages-overwriter). Además, se incluye un archivo `.nojekyll` para evitar que GitHub transforme la estructura del sitio y para permitir subdirectorios que comiencen con `_`. 

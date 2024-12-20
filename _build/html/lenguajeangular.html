@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Proyecto de cerp &#8212; Book</title>
+    <title>Introducción a Angular &#8212; Book</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'proyectocompletoangular';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lenguajeangular';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Supabase: (Backend como Servicio)" href="supabase.html" />
-    <link rel="prev" title="Introducción a Angular" href="angular.html" />
+    <link rel="next" title="Crear un Proyecto en Angular" href="proyectoangular.html" />
+    <link rel="prev" title="Proyecto completo en Javascript" href="proyectovanilla.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -164,20 +164,19 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Introducción
+                    Descripción General
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">JavaScript</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="projectvanilla.html">Proyecto completo en Javascript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lenguajejavascript.html">El lenguaje Javascript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arraysobjetosclases.html">Arrays Objetos y clases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyectovanilla.html">Proyecto completo en Javascript</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Angular</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="angular.html">Introducción a Angular</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Proyecto de cerp</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción a Angular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyectoangular.html">Crear un Proyecto en Angular</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supabase</span></p>
 <ul class="nav bd-sidenav">
@@ -253,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Fproyectocompletoangular.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Flenguajeangular.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -283,7 +282,7 @@
       
       
       
-      <li><a href="_sources/proyectocompletoangular.ipynb" target="_blank"
+      <li><a href="_sources/lenguajeangular.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +356,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Proyecto de cerp</h1>
+    <h1>Introducción a Angular</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -371,51 +370,39 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="proyecto-de-cerp">
-<h1>Proyecto de cerp<a class="headerlink" href="#proyecto-de-cerp" title="Link to this heading">#</a></h1>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>src/
-├── app/
-│   ├── core/               # Servicios y funcionalidades principales (singleton)
-│   │   ├── guards/         # Guards para rutas
-│   │   ├── interceptors/   # Interceptores HTTP
-│   │   ├── services/       # Servicios globales (e.g., autenticación, notificaciones)
-│   │   ├── models/         # Interfaces y modelos de datos
-│   │   ├── utils/          # Utilidades y helpers globales
-│   │   └── core.module.ts  # Módulo que exporta el core
-│   │
-│   ├── shared/             # Componentes, directivas y pipes reutilizables
-│   │   ├── components/     # Componentes compartidos (e.g., header, footer)
-│   │   ├── directives/     # Directivas reutilizables
-│   │   ├── pipes/          # Pipes reutilizables
-│   │   └── shared.module.ts # Módulo que exporta los elementos compartidos
-│   │
-│   ├── features/           # Funcionalidades específicas de la aplicación
-│   │   ├── auth/           # Módulo para autenticación
-│   │   │   ├── components/ # Componentes del módulo
-│   │   │   ├── services/   # Servicios específicos
-│   │   │   ├── pages/      # Páginas (e.g., login, register)
-│   │   │   └── auth.module.ts
-│   │   ├── products/       # Módulo de productos
-│   │   │   ├── components/ # Componentes (e.g., product-card, product-list)
-│   │   │   ├── services/   # Servicios específicos de productos
-│   │   │   ├── pages/      # Páginas (e.g., product-detail, product-list)
-│   │   │   └── products.module.ts
-│   │   └── ...             # Más módulos de funcionalidades
-│   │
-│   ├── app-routing.module.ts  # Configuración de rutas principales
-│   ├── app.module.ts          # Módulo principal
-│   └── app.component.ts       # Componente raíz
-│
-├── assets/                   # Archivos estáticos (imágenes, fuentes, etc.)
-│   ├── images/
-│   └── styles/
-│
-├── environments/             # Configuración de entornos
-│   ├── environment.ts        # Entorno de desarrollo
-│   └── environment.prod.ts   # Entorno de producción
-└── styles.scss               # Estilos globales
-</pre></div>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-angular">
+<h1>Introducción a Angular<a class="headerlink" href="#introduccion-a-angular" title="Link to this heading">#</a></h1>
+<p>Angular es un framework de desarrollo web de código abierto, mantenido por Google, para la creación de aplicaciones web front-end dinámicas. Se basa en TypeScript, una extensión de JavaScript que añade tipado estático, para mejorar la legibilidad, mantenibilidad y robustez del código.</p>
+<p>Angular cambia totalmente la manera de programar. Reduce significativamente el código que hay que escribir a cambio de ser muy rígido en la manera de tratar con los elementos de la aplicación. Por tanto, tiene una curva de aprendizaje un poco alta al principio.</p>
+<p><strong>Evolución del nombre y versiones</strong></p>
+<p>El framework ha experimentado cambios en su nombre y esquema de versiones a lo largo del tiempo:</p>
+<ul class="simple">
+<li><p><strong>Hasta la versión 1.7:</strong> Angular.js</p></li>
+<li><p><strong>Desde la versión 2:</strong> Angular 2, 4, 5, 6, 7, …, 18 (actual)</p></li>
+</ul>
+<p>Cada 6 meses libera una nueva versión. Suelen ser bastante compatibles entre las que están próximas y las últimas son retrocompatibles, excepto entre la 1 y la 2, donde cambió casi todo.</p>
+<p><strong>Características principales</strong></p>
+<ul class="simple">
+<li><p><strong>Expressividad en las plantillas HTML:</strong> Permite crear interfaces de usuario dinámicas y declarativas utilizando sintaxis HTML enriquecida.</p></li>
+<li><p><strong>Diseño modular y Lazy Loading:</strong> Promueve la organización del código en módulos reutilizables y la carga en diferido de componentes para optimizar el rendimiento.</p></li>
+<li><p><strong>Facilidad para reutilizar componentes:</strong> Fomenta la creación de componentes reutilizables que encapsulan funcionalidad y lógica de negocio, mejorando la modularidad y mantenibilidad del código.</p></li>
+<li><p><strong>Comunicación fluida con el backend:</strong> Facilita la comunicación entre la aplicación Angular y el servidor backend, permitiendo diversas tecnologías como RESTful APIs, WebSockets y Server-Side Rendering.</p></li>
+<li><p><strong>Herramientas de desarrollo potentes:</strong> Ofrece una completa suite de herramientas de desarrollo, como Augury, Karma y Jasmine, para facilitar la creación, prueba y depuración de aplicaciones.</p></li>
+<li><p><strong>Integración con frameworks de diseño:</strong> Se integra perfectamente con frameworks de diseño populares como Bootstrap, Angular Material e Ionic, permitiendo crear interfaces de usuario atractivas y consistentes.</p></li>
+<li><p><strong>Single Page Applications (SPAs):</strong> Permite la creación de aplicaciones web de una sola página (SPAs).</p></li>
+<li><p><strong>Arquitectura extensible:</strong> Posee un sistema modular extensible que facilita la incorporación de nuevas funcionalidades y bibliotecas de terceros.</p></li>
+<li><p><strong>Reactividad simplificada:</strong> Simplifica la gestión de la reactividad en la interfaz de usuario, permitiendo que los cambios en los datos se reflejen automáticamente en la vista.</p></li>
+<li><p><strong>DOM virtual:</strong> Implementa un DOM virtual que optimiza el rendimiento y reduce las manipulaciones directas del DOM real.</p></li>
+<li><p><strong>Pensado para grandes aplicaciones:</strong> Está diseñado para el desarrollo de aplicaciones web a gran escala, ofreciendo características como el enrutado, la gestión de estado y la inyección de dependencias.</p></li>
+</ul>
+<p><strong>Tipos de aplicaciones web con Angular</strong></p>
+<p>Angular se puede utilizar para desarrollar diferentes tipos de aplicaciones web:</p>
+<ul class="simple">
+<li><p><strong>Páginas web tradicionales:</strong> Permite generar páginas web dinámicas con HTML generado en el servidor y Javascript para la interacción y las peticiones AJAX.</p></li>
+<li><p><strong>Single Page Applications (SPAs):</strong> Facilita la creación de SPAs que generan el HTML en el cliente a partir de datos JSON o XML enviados por el servidor. Puede que este tipo de APPs sean para las que está más preparado.</p></li>
+<li><p><strong>Progressive Web Applications (PWAs):</strong> Brinda soporte para el desarrollo de PWAs, que ofrecen una experiencia similar a las aplicaciones nativas, con la posibilidad de funcionar sin conexión y acceso a las capacidades del dispositivo.</p></li>
+<li><p><strong>Aplicaciones híbridas:</strong> Permite la creación de aplicaciones híbridas que se ejecutan dentro de un navegador web mínimo embebido en la aplicación nativa, utilizando tecnologías como Cordova o Ionic.</p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -427,16 +414,16 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "deno"
+            mode: "python"
         },
         kernelOptions: {
-            name: "deno",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'deno'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -449,20 +436,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="angular.html"
+       href="proyectovanilla.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introducción a Angular</p>
+        <p class="prev-next-title">Proyecto completo en Javascript</p>
       </div>
     </a>
     <a class="right-next"
-       href="supabase.html"
+       href="proyectoangular.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Supabase: (Backend como Servicio)</p>
+        <p class="prev-next-title">Crear un Proyecto en Angular</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

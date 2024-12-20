@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introducción &#8212; Book</title>
+    <title>Descripción General &#8212; Book</title>
   
   
   
@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Proyecto completo en Javascript" href="projectvanilla.html" />
+    <link rel="next" title="El lenguaje Javascript" href="lenguajejavascript.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -165,20 +165,19 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Introducción
+                    Descripción General
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">JavaScript</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="projectvanilla.html">Proyecto completo en Javascript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lenguajejavascript.html">El lenguaje Javascript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arraysobjetosclases.html">Arrays Objetos y clases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyectovanilla.html">Proyecto completo en Javascript</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Angular</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="angular.html">Introducción a Angular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="proyectocompletoangular.html">Proyecto de cerp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenguajeangular.html">Introducción a Angular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyectoangular.html">Crear un Proyecto en Angular</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supabase</span></p>
 <ul class="nav bd-sidenav">
@@ -360,7 +359,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introducción</h1>
+    <h1>Descripción General</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -370,9 +369,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-encontraras-aqui">¿Qué encontrarás aquí?</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenidos">Contenidos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposito">Propósito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-usarlo">Cómo Usarlo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-el-libro-para-la-web">Construir el Libro para la Web</a></li>
 </ul>
             </nav>
         </div>
@@ -384,42 +384,70 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion">
-<h1>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h1>
-<p>Este libro recopila los conocimientos y aprendizajes que he adquirido durante mi formación en el curso de <strong>Desarrollo de Aplicaciones Web (DAW)</strong>. Aquí encontrarás una síntesis de mis apuntes, centrados en dos de las tecnologías más destacadas del desarrollo web: <strong>JavaScript</strong> y <strong>Angular</strong>.</p>
-<p>El propósito de este libro es servir como un recurso de consulta personal, donde he documentado conceptos clave, buenas prácticas, ejemplos de código y mis reflexiones durante el proceso de aprendizaje. No pretende ser un manual exhaustivo, sino un compendio práctico y accesible que refleja mi evolución en estas tecnologías.</p>
-<section id="que-encontraras-aqui">
-<h2>¿Qué encontrarás aquí?<a class="headerlink" href="#que-encontraras-aqui" title="Link to this heading">#</a></h2>
-<p>En este libro exploraremos:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="descripcion-general">
+<h1>Descripción General<a class="headerlink" href="#descripcion-general" title="Link to this heading">#</a></h1>
+<p>Este repositorio es una recopilación integral de apuntes, ejemplos y recursos para el desarrollo con JavaScript, con un enfoque en herramientas y frameworks modernos como Vite, Angular y Supabase. Está estructurado como un proyecto de Jupyter Notebook, lo que permite un aprendizaje interactivo y la experimentación.</p>
+<section id="contenidos">
+<h2>Contenidos<a class="headerlink" href="#contenidos" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>JavaScript</strong>: Desde conceptos básicos hasta técnicas avanzadas y patrones de diseño.</p></li>
-<li><p><strong>Vite</strong>: Cómo configurarlo y usarlo como una herramienta de construcción rápida y eficiente.</p></li>
-<li><p><strong>Angular</strong>: Los fundamentos del desarrollo basado en componentes, servicios y enrutamiento.</p></li>
-<li><p><strong>Supabase</strong>: Cómo integrar bases de datos, autenticación y APIs en aplicaciones web modernas.</p></li>
+<li><p><strong>Conceptos Básicos y Avanzados de JavaScript</strong>: Principios clave, patrones y mejores prácticas.</p></li>
+<li><p><strong>Vite</strong>: Configuración, casos de uso y ejemplos de proyectos usando esta herramienta de construcción rápida.</p></li>
+<li><p><strong>Angular</strong>: Conceptos principales, desarrollo basado en componentes, servicios y enrutamiento.</p></li>
+<li><p><strong>Supabase</strong>: Integración de bases de datos, autenticación y APIs para aplicaciones web modernas.</p></li>
 </ul>
-<p>Consulta las páginas de contenido incluidas en este libro.</p>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">JavaScript</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="projectvanilla.html">Proyecto completo en Javascript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lenguajejavascript.html">El lenguaje Javascript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arraysobjetosclases.html">Arrays Objetos y clases</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Angular</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="angular.html">Introducción a Angular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="proyectocompletoangular.html">Proyecto de cerp</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Supabase</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="supabase.html">Supabase: (Backend como Servicio)</a></li>
-</ul>
-</div>
 </section>
+<section id="proposito">
+<h2>Propósito<a class="headerlink" href="#proposito" title="Link to this heading">#</a></h2>
+<p>Este repositorio está destinado a:</p>
+<ul class="simple">
+<li><p>Desarrolladores que buscan mejorar su comprensión de JavaScript y herramientas relacionadas.</p></li>
+<li><p>Estudiantes explorando Vite, Angular o Supabase en contextos prácticos.</p></li>
+<li><p>Cualquiera que desee construir una base de conocimiento o un portafolio con Jupyter Notebooks interactivos.</p></li>
+</ul>
+</section>
+<section id="como-usarlo">
+<h2>Cómo Usarlo<a class="headerlink" href="#como-usarlo" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Clona el repositorio:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/bena-sudo/book.git
+</pre></div>
+</div>
+</li>
+<li><p>Instala Jupyter Notebook o JupyterLab (si aún no lo tienes instalado).</p></li>
+<li><p>Instala Deno como intérprete:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://deno.land/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+deno<span class="w"> </span>jupyter<span class="w"> </span>--unstable
+deno<span class="w"> </span>jupyter<span class="w"> </span>--install
+</pre></div>
+</div>
+</li>
+<li><p>Abre los notebooks en Jupyter o Visual Studio Code con la extensión de Jupyter, seleccionando Deno como Kernel.</p></li>
+</ol>
+</section>
+<section id="construir-el-libro-para-la-web">
+<h2>Construir el Libro para la Web<a class="headerlink" href="#construir-el-libro-para-la-web" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Instala la herramienta necesaria:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>jupyter-book
+</pre></div>
+</div>
+</li>
+<li><p>Construye el libro:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Alternativamente, una versión preconstruida de este libro está disponible y se actualiza regularmente en:
+<a class="reference external" href="https://bena-sudo.github.io/book/intro.html">GitHub Pages - Libro</a>.</p>
+<p>Para publicar este libro, he utilizado GitHub Pages. El despliegue está automatizado con un GitHub Action desde la rama master. Los detalles del action están disponibles aquí: <a class="reference external" href="https://github.com/marketplace/actions/github-pages-overwriter">GitHub Pages Overwriter</a>. Además, se incluye un archivo <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code> para evitar que GitHub transforme la estructura del sitio y para permitir subdirectorios que comiencen con <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -453,11 +481,11 @@
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="projectvanilla.html"
+       href="lenguajejavascript.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Proyecto completo en Javascript</p>
+        <p class="prev-next-title">El lenguaje Javascript</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -478,9 +506,10 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-encontraras-aqui">¿Qué encontrarás aquí?</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenidos">Contenidos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposito">Propósito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-usarlo">Cómo Usarlo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-el-libro-para-la-web">Construir el Libro para la Web</a></li>
 </ul>
   </nav></div>
 

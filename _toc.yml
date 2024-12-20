@@ -6,13 +6,12 @@ root: intro
 parts:
   - caption: JavaScript
     chapters:
-    - file: projectvanilla
     - file: lenguajejavascript
-    - file: arraysobjetosclases
+    - file: proyectovanilla
   - caption: Angular
     chapters:
-    - file: angular
-    - file: proyectocompletoangular
+    - file: lenguajeangular
+    - file: proyectoangular
   - caption: Supabase
     chapters:
     - file: supabase
