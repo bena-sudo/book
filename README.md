@@ -43,7 +43,7 @@ This repository is intended for:
    ```
 2. Build the book:
    ```bash
-   jupyter-book build libroDwec/
+   jupyter-book build .
    ```
 
 Alternatively, a prebuilt version of this book is available and updated regularly at:
@@ -96,7 +96,7 @@ Este repositorio está destinado a:
    ```
 2. Construye el libro:
    ```bash
-   jupyter-book build libroDwec/
+   jupyter-book build .
    ```
 
 Alternativamente, una versión preconstruida de este libro está disponible y se actualiza regularmente en:

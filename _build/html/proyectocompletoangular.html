@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Proyecto de cerp &#8212; Book</title>
   
   
   
@@ -58,12 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'proyectocompletoangular';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Supabase: (Backend como Servicio)" href="supabase.html" />
+    <link rel="prev" title="Introducción a Angular" href="angular.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -85,7 +86,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -114,8 +115,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -176,9 +175,9 @@
 <li class="toctree-l1"><a class="reference internal" href="arraysobjetosclases.html">Arrays Objetos y clases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Angular</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="angular.html">Introducción a Angular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="proyectocompletoangular.html">Proyecto de cerp</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Proyecto de cerp</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supabase</span></p>
 <ul class="nav bd-sidenav">
@@ -254,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Fproyectocompletoangular.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -266,6 +265,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/proyectocompletoangular.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -308,41 +355,91 @@
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Proyecto de cerp</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="proyecto-de-cerp">
+<h1>Proyecto de cerp<a class="headerlink" href="#proyecto-de-cerp" title="Link to this heading">#</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>src/
+├── app/
+│   ├── core/               # Servicios y funcionalidades principales (singleton)
+│   │   ├── guards/         # Guards para rutas
+│   │   ├── interceptors/   # Interceptores HTTP
+│   │   ├── services/       # Servicios globales (e.g., autenticación, notificaciones)
+│   │   ├── models/         # Interfaces y modelos de datos
+│   │   ├── utils/          # Utilidades y helpers globales
+│   │   └── core.module.ts  # Módulo que exporta el core
+│   │
+│   ├── shared/             # Componentes, directivas y pipes reutilizables
+│   │   ├── components/     # Componentes compartidos (e.g., header, footer)
+│   │   ├── directives/     # Directivas reutilizables
+│   │   ├── pipes/          # Pipes reutilizables
+│   │   └── shared.module.ts # Módulo que exporta los elementos compartidos
+│   │
+│   ├── features/           # Funcionalidades específicas de la aplicación
+│   │   ├── auth/           # Módulo para autenticación
+│   │   │   ├── components/ # Componentes del módulo
+│   │   │   ├── services/   # Servicios específicos
+│   │   │   ├── pages/      # Páginas (e.g., login, register)
+│   │   │   └── auth.module.ts
+│   │   ├── products/       # Módulo de productos
+│   │   │   ├── components/ # Componentes (e.g., product-card, product-list)
+│   │   │   ├── services/   # Servicios específicos de productos
+│   │   │   ├── pages/      # Páginas (e.g., product-detail, product-list)
+│   │   │   └── products.module.ts
+│   │   └── ...             # Más módulos de funcionalidades
+│   │
+│   ├── app-routing.module.ts  # Configuración de rutas principales
+│   ├── app.module.ts          # Módulo principal
+│   └── app.component.ts       # Componente raíz
+│
+├── assets/                   # Archivos estáticos (imágenes, fuentes, etc.)
+│   ├── images/
+│   └── styles/
+│
+├── environments/             # Configuración de entornos
+│   ├── environment.ts        # Entorno de desarrollo
+│   └── environment.prod.ts   # Entorno de producción
+└── styles.scss               # Estilos globales
+</pre></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "deno"
+        },
+        kernelOptions: {
+            name: "deno",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'deno'</script>
+
+                </article>
+              
 
               
               
@@ -351,6 +448,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="angular.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introducción a Angular</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="supabase.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Supabase: (Backend como Servicio)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

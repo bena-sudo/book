@@ -7,9 +7,12 @@ parts:
   - caption: JavaScript
     chapters:
     - file: projectvanilla
+    - file: lenguajejavascript
+    - file: arraysobjetosclases
   - caption: Angular
     chapters:
     - file: angular
+    - file: proyectocompletoangular
   - caption: Supabase
     chapters:
     - file: supabase
