@@ -12,6 +12,7 @@ parts:
     chapters:
     - file: lenguajeangular
     - file: proyectoangular
+    - file: comandosangular
   - caption: Supabase
     chapters:
     - file: supabase
