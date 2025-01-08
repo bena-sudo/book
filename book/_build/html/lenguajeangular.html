@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Descripción General &#8212; Book</title>
+    <title>Introducción a Angular &#8212; Book</title>
   
   
   
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,10 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lenguajeangular';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="El lenguaje Javascript" href="lenguajejavascript.html" />
+    <link rel="next" title="Crear un Proyecto en Angular" href="proyectoangular.html" />
+    <link rel="prev" title="Proyecto completo en Javascript" href="proyectovanilla.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -163,8 +162,8 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Descripción General
                 </a>
             </li>
@@ -175,8 +174,8 @@
 <li class="toctree-l1"><a class="reference internal" href="proyectovanilla.html">Proyecto completo en Javascript</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Angular</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="lenguajeangular.html">Introducción a Angular</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción a Angular</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proyectoangular.html">Crear un Proyecto en Angular</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comandosangular.html">Comandos de Angular</a></li>
 </ul>
@@ -254,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Flenguajeangular.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +283,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/lenguajeangular.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +293,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -347,9 +346,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -360,22 +357,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Descripción General</h1>
+    <h1>Introducción a Angular</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenidos">Contenidos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposito">Propósito</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-usarlo">Cómo Usarlo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-el-libro-para-la-web">Construir el Libro para la Web</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -385,70 +371,39 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="descripcion-general">
-<h1>Descripción General<a class="headerlink" href="#descripcion-general" title="Link to this heading">#</a></h1>
-<p>Este repositorio es una recopilación integral de apuntes, ejemplos y recursos para el desarrollo con JavaScript, con un enfoque en herramientas y frameworks modernos como Vite, Angular y Supabase. Está estructurado como un proyecto de Jupyter Notebook, lo que permite un aprendizaje interactivo y la experimentación.</p>
-<section id="contenidos">
-<h2>Contenidos<a class="headerlink" href="#contenidos" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-angular">
+<h1>Introducción a Angular<a class="headerlink" href="#introduccion-a-angular" title="Link to this heading">#</a></h1>
+<p>Angular es un framework de desarrollo web de código abierto, mantenido por Google, para la creación de aplicaciones web front-end dinámicas. Se basa en TypeScript, una extensión de JavaScript que añade tipado estático, para mejorar la legibilidad, mantenibilidad y robustez del código.</p>
+<p>Angular cambia totalmente la manera de programar. Reduce significativamente el código que hay que escribir a cambio de ser muy rígido en la manera de tratar con los elementos de la aplicación. Por tanto, tiene una curva de aprendizaje un poco alta al principio.</p>
+<p><strong>Evolución del nombre y versiones</strong></p>
+<p>El framework ha experimentado cambios en su nombre y esquema de versiones a lo largo del tiempo:</p>
 <ul class="simple">
-<li><p><strong>Conceptos Básicos y Avanzados de JavaScript</strong>: Principios clave, patrones y mejores prácticas.</p></li>
-<li><p><strong>Vite</strong>: Configuración, casos de uso y ejemplos de proyectos usando esta herramienta de construcción rápida.</p></li>
-<li><p><strong>Angular</strong>: Conceptos principales, desarrollo basado en componentes, servicios y enrutamiento.</p></li>
-<li><p><strong>Supabase</strong>: Integración de bases de datos, autenticación y APIs para aplicaciones web modernas.</p></li>
+<li><p><strong>Hasta la versión 1.7:</strong> Angular.js</p></li>
+<li><p><strong>Desde la versión 2:</strong> Angular 2, 4, 5, 6, 7, …, 18 (actual)</p></li>
 </ul>
-</section>
-<section id="proposito">
-<h2>Propósito<a class="headerlink" href="#proposito" title="Link to this heading">#</a></h2>
-<p>Este repositorio está destinado a:</p>
+<p>Cada 6 meses libera una nueva versión. Suelen ser bastante compatibles entre las que están próximas y las últimas son retrocompatibles, excepto entre la 1 y la 2, donde cambió casi todo.</p>
+<p><strong>Características principales</strong></p>
 <ul class="simple">
-<li><p>Desarrolladores que buscan mejorar su comprensión de JavaScript y herramientas relacionadas.</p></li>
-<li><p>Estudiantes explorando Vite, Angular o Supabase en contextos prácticos.</p></li>
-<li><p>Cualquiera que desee construir una base de conocimiento o un portafolio con Jupyter Notebooks interactivos.</p></li>
+<li><p><strong>Expressividad en las plantillas HTML:</strong> Permite crear interfaces de usuario dinámicas y declarativas utilizando sintaxis HTML enriquecida.</p></li>
+<li><p><strong>Diseño modular y Lazy Loading:</strong> Promueve la organización del código en módulos reutilizables y la carga en diferido de componentes para optimizar el rendimiento.</p></li>
+<li><p><strong>Facilidad para reutilizar componentes:</strong> Fomenta la creación de componentes reutilizables que encapsulan funcionalidad y lógica de negocio, mejorando la modularidad y mantenibilidad del código.</p></li>
+<li><p><strong>Comunicación fluida con el backend:</strong> Facilita la comunicación entre la aplicación Angular y el servidor backend, permitiendo diversas tecnologías como RESTful APIs, WebSockets y Server-Side Rendering.</p></li>
+<li><p><strong>Herramientas de desarrollo potentes:</strong> Ofrece una completa suite de herramientas de desarrollo, como Augury, Karma y Jasmine, para facilitar la creación, prueba y depuración de aplicaciones.</p></li>
+<li><p><strong>Integración con frameworks de diseño:</strong> Se integra perfectamente con frameworks de diseño populares como Bootstrap, Angular Material e Ionic, permitiendo crear interfaces de usuario atractivas y consistentes.</p></li>
+<li><p><strong>Single Page Applications (SPAs):</strong> Permite la creación de aplicaciones web de una sola página (SPAs).</p></li>
+<li><p><strong>Arquitectura extensible:</strong> Posee un sistema modular extensible que facilita la incorporación de nuevas funcionalidades y bibliotecas de terceros.</p></li>
+<li><p><strong>Reactividad simplificada:</strong> Simplifica la gestión de la reactividad en la interfaz de usuario, permitiendo que los cambios en los datos se reflejen automáticamente en la vista.</p></li>
+<li><p><strong>DOM virtual:</strong> Implementa un DOM virtual que optimiza el rendimiento y reduce las manipulaciones directas del DOM real.</p></li>
+<li><p><strong>Pensado para grandes aplicaciones:</strong> Está diseñado para el desarrollo de aplicaciones web a gran escala, ofreciendo características como el enrutado, la gestión de estado y la inyección de dependencias.</p></li>
 </ul>
-</section>
-<section id="como-usarlo">
-<h2>Cómo Usarlo<a class="headerlink" href="#como-usarlo" title="Link to this heading">#</a></h2>
-<ol class="arabic">
-<li><p>Clona el repositorio:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/bena-sudo/book.git
-</pre></div>
-</div>
-</li>
-<li><p>Instala Jupyter Notebook o JupyterLab (si aún no lo tienes instalado).</p></li>
-<li><p>Instala Deno como intérprete:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://deno.land/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
-deno<span class="w"> </span>jupyter<span class="w"> </span>--unstable
-deno<span class="w"> </span>jupyter<span class="w"> </span>--install
-</pre></div>
-</div>
-</li>
-<li><p>Abre los notebooks en Jupyter o Visual Studio Code con la extensión de Jupyter, seleccionando Deno como Kernel.</p></li>
-</ol>
-</section>
-<section id="construir-el-libro-para-la-web">
-<h2>Construir el Libro para la Web<a class="headerlink" href="#construir-el-libro-para-la-web" title="Link to this heading">#</a></h2>
-<ol class="arabic">
-<li><p>Instala la herramienta necesaria:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>jupyter-book
-</pre></div>
-</div>
-</li>
-<li><p>Construye el libro:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
-</pre></div>
-</div>
-</li>
-</ol>
-<p>Alternativamente, una versión preconstruida de este libro está disponible y se actualiza regularmente en:
-<a class="reference external" href="https://bena-sudo.github.io/book/intro.html">GitHub Pages - Libro</a>.</p>
-<p>Para publicar este libro, he utilizado GitHub Pages. El despliegue está automatizado con un GitHub Action desde la rama master. Los detalles del action están disponibles aquí: <a class="reference external" href="https://github.com/marketplace/actions/github-pages-overwriter">GitHub Pages Overwriter</a>. Además, se incluye un archivo <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code> para evitar que GitHub transforme la estructura del sitio y para permitir subdirectorios que comiencen con <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p>
-</section>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
+<p><strong>Tipos de aplicaciones web con Angular</strong></p>
+<p>Angular se puede utilizar para desarrollar diferentes tipos de aplicaciones web:</p>
+<ul class="simple">
+<li><p><strong>Páginas web tradicionales:</strong> Permite generar páginas web dinámicas con HTML generado en el servidor y Javascript para la interacción y las peticiones AJAX.</p></li>
+<li><p><strong>Single Page Applications (SPAs):</strong> Facilita la creación de SPAs que generan el HTML en el cliente a partir de datos JSON o XML enviados por el servidor. Puede que este tipo de APPs sean para las que está más preparado.</p></li>
+<li><p><strong>Progressive Web Applications (PWAs):</strong> Brinda soporte para el desarrollo de PWAs, que ofrecen una experiencia similar a las aplicaciones nativas, con la posibilidad de funcionar sin conexión y acceso a las capacidades del dispositivo.</p></li>
+<li><p><strong>Aplicaciones híbridas:</strong> Permite la creación de aplicaciones híbridas que se ejecutan dentro de un navegador web mínimo embebido en la aplicación nativa, utilizando tecnologías como Cordova o Ionic.</p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -481,12 +436,21 @@ deno<span class="w"> </span>jupyter<span class="w"> </span>--install
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="proyectovanilla.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Proyecto completo en Javascript</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="lenguajejavascript.html"
+       href="proyectoangular.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">El lenguaje Javascript</p>
+        <p class="prev-next-title">Crear un Proyecto en Angular</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -496,25 +460,6 @@ deno<span class="w"> </span>jupyter<span class="w"> </span>--install
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenidos">Contenidos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposito">Propósito</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-usarlo">Cómo Usarlo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-el-libro-para-la-web">Construir el Libro para la Web</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
