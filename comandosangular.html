@@ -1,0 +1,788 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Comandos de Angular &#8212; Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'comandosangular';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Supabase: (Backend como Servicio)" href="supabase.html" />
+    <link rel="prev" title="Crear un Proyecto en Angular" href="proyectoangular.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Descripción General
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">JavaScript</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="lenguajejavascript.html">El lenguaje Javascript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyectovanilla.html">Proyecto completo en Javascript</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Angular</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="lenguajeangular.html">Introducción a Angular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyectoangular.html">Crear un Proyecto en Angular</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Comandos de Angular</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Supabase</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="supabase.html">Supabase: (Backend como Servicio)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/bena-sudo/book/tree/main" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bena-sudo/book/tree/main/issues/new?title=Issue%20on%20page%20%2Fcomandosangular.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/comandosangular.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Comandos de Angular</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-inicializacion">Comandos de Inicialización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-un-nuevo-proyecto">Crear un nuevo proyecto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ayuda">Ayuda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-desarrollo">Comandos de Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servidor-de-desarrollo">Servidor de desarrollo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-elementos-componentes-servicios-modulos-etc">Generar elementos (componentes, servicios, módulos, etc.)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadir-bibliotecas">Añadir bibliotecas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construccion-de-la-aplicacion">Construcción de la aplicación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-pruebas">Comandos de Pruebas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pruebas-unitarias">Pruebas unitarias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pruebas-end-to-end-e2e">Pruebas end-to-end (E2E)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-actualizacion">Comandos de Actualización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-angular-y-dependencias">Actualizar Angular y dependencias</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-linter">Comandos de Linter</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecutar-el-linter">Ejecutar el linter</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-depuracion-y-optimizacion">Comandos de Depuración y Optimización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analizar-el-tamano-del-bundle">Analizar el tamaño del bundle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#habilitar-analisis-en-tiempo-real">Habilitar análisis en tiempo real</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-configuracion">Comandos de Configuración</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurar-angular-cli">Configurar Angular CLI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-comandos-utiles">Otros Comandos Útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mostrar-la-version-de-angular">Mostrar la versión de Angular</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#desplegar-en-un-servidor">Desplegar en un servidor</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="comandos-de-angular">
+<h1>Comandos de Angular<a class="headerlink" href="#comandos-de-angular" title="Link to this heading">#</a></h1>
+<p>Angular CLI es una herramienta poderosa que permite a los desarrolladores crear, desarrollar y mantener aplicaciones Angular de manera eficiente. A continuación, se presenta una lista de los comandos más importantes:</p>
+<section id="comandos-de-inicializacion">
+<h2>Comandos de Inicialización<a class="headerlink" href="#comandos-de-inicializacion" title="Link to this heading">#</a></h2>
+<section id="crear-un-nuevo-proyecto">
+<h3>Crear un nuevo proyecto<a class="headerlink" href="#crear-un-nuevo-proyecto" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>new<span class="w"> </span>&lt;nombre-del-proyecto&gt;
+</pre></div>
+</div>
+<p>Crea una nueva aplicación Angular con la configuración inicial.</p>
+</section>
+<section id="ayuda">
+<h3>Ayuda<a class="headerlink" href="#ayuda" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span><span class="nb">help</span>
+</pre></div>
+</div>
+<p>Muestra la lista de comandos disponibles y sus descripciones.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comandos-de-desarrollo">
+<h2>Comandos de Desarrollo<a class="headerlink" href="#comandos-de-desarrollo" title="Link to this heading">#</a></h2>
+<section id="servidor-de-desarrollo">
+<h3>Servidor de desarrollo<a class="headerlink" href="#servidor-de-desarrollo" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>serve
+</pre></div>
+</div>
+<p>Inicia un servidor de desarrollo y compila la aplicación en tiempo real. Por defecto, está disponible en <code class="docutils literal notranslate"><span class="pre">http://localhost:4200/</span></code>.</p>
+</section>
+<section id="generar-elementos-componentes-servicios-modulos-etc">
+<h3>Generar elementos (componentes, servicios, módulos, etc.)<a class="headerlink" href="#generar-elementos-componentes-servicios-modulos-etc" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>generate<span class="w"> </span>&lt;schematic&gt;<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+<p>Alias: <code class="docutils literal notranslate"><span class="pre">ng</span> <span class="pre">g</span></code></p>
+<p>Ejemplos:</p>
+<ul>
+<li><p>Crear un componente:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>component<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear un servicio:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>service<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear un módulo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>module<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear una directiva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>directive<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear un pipe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>pipe<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear una clase:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>class<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear una interfaz:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>interface<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear un enumerador:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>enum<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Crear un guard:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>g<span class="w"> </span>guard<span class="w"> </span>&lt;nombre&gt;
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="anadir-bibliotecas">
+<h3>Añadir bibliotecas<a class="headerlink" href="#anadir-bibliotecas" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>add<span class="w"> </span>&lt;paquete&gt;
+</pre></div>
+</div>
+<p>Instala y configura una biblioteca Angular en el proyecto. Ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>add<span class="w"> </span>@angular/material
+</pre></div>
+</div>
+</section>
+<section id="construccion-de-la-aplicacion">
+<h3>Construcción de la aplicación<a class="headerlink" href="#construccion-de-la-aplicacion" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>build
+</pre></div>
+</div>
+<p>Compila la aplicación para producción. Los archivos generados se colocan en el directorio <code class="docutils literal notranslate"><span class="pre">dist/</span></code>.</p>
+<p>Opciones comunes:</p>
+<ul>
+<li><p>Para producción:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>build<span class="w"> </span>--prod
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comandos-de-pruebas">
+<h2>Comandos de Pruebas<a class="headerlink" href="#comandos-de-pruebas" title="Link to this heading">#</a></h2>
+<section id="pruebas-unitarias">
+<h3>Pruebas unitarias<a class="headerlink" href="#pruebas-unitarias" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span><span class="nb">test</span>
+</pre></div>
+</div>
+<p>Ejecuta las pruebas unitarias en la aplicación utilizando Karma.</p>
+</section>
+<section id="pruebas-end-to-end-e2e">
+<h3>Pruebas end-to-end (E2E)<a class="headerlink" href="#pruebas-end-to-end-e2e" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>e2e
+</pre></div>
+</div>
+<p>Ejecuta pruebas end-to-end utilizando una herramienta como Protractor (descontinuado en las versiones más recientes).</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comandos-de-actualizacion">
+<h2>Comandos de Actualización<a class="headerlink" href="#comandos-de-actualizacion" title="Link to this heading">#</a></h2>
+<section id="actualizar-angular-y-dependencias">
+<h3>Actualizar Angular y dependencias<a class="headerlink" href="#actualizar-angular-y-dependencias" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>update
+</pre></div>
+</div>
+<p>Actualiza Angular y las dependencias del proyecto a sus versiones más recientes.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comandos-de-linter">
+<h2>Comandos de Linter<a class="headerlink" href="#comandos-de-linter" title="Link to this heading">#</a></h2>
+<section id="ejecutar-el-linter">
+<h3>Ejecutar el linter<a class="headerlink" href="#ejecutar-el-linter" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>lint
+</pre></div>
+</div>
+<p>Analiza el código para encontrar y arreglar problemas de estilo y errores potenciales.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comandos-de-depuracion-y-optimizacion">
+<h2>Comandos de Depuración y Optimización<a class="headerlink" href="#comandos-de-depuracion-y-optimizacion" title="Link to this heading">#</a></h2>
+<section id="analizar-el-tamano-del-bundle">
+<h3>Analizar el tamaño del bundle<a class="headerlink" href="#analizar-el-tamano-del-bundle" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>build<span class="w"> </span>--stats-json
+</pre></div>
+</div>
+<p>Luego, usar herramientas como <code class="docutils literal notranslate"><span class="pre">webpack-bundle-analyzer</span></code> para analizar el tamaño del bundle:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npx<span class="w"> </span>webpack-bundle-analyzer<span class="w"> </span>dist/stats.json
+</pre></div>
+</div>
+</section>
+<section id="habilitar-analisis-en-tiempo-real">
+<h3>Habilitar análisis en tiempo real<a class="headerlink" href="#habilitar-analisis-en-tiempo-real" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>serve<span class="w"> </span>--source-map
+</pre></div>
+</div>
+<p>Genera mapas de origen para facilitar la depuración.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comandos-de-configuracion">
+<h2>Comandos de Configuración<a class="headerlink" href="#comandos-de-configuracion" title="Link to this heading">#</a></h2>
+<section id="configurar-angular-cli">
+<h3>Configurar Angular CLI<a class="headerlink" href="#configurar-angular-cli" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>config<span class="w"> </span>&lt;clave&gt;<span class="w"> </span>&lt;valor&gt;
+</pre></div>
+</div>
+<p>Permite establecer o modificar configuraciones globales o específicas del proyecto. Ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>config<span class="w"> </span>cli.defaultCollection<span class="w"> </span>@angular-eslint/schematics
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="otros-comandos-utiles">
+<h2>Otros Comandos Útiles<a class="headerlink" href="#otros-comandos-utiles" title="Link to this heading">#</a></h2>
+<section id="mostrar-la-version-de-angular">
+<h3>Mostrar la versión de Angular<a class="headerlink" href="#mostrar-la-version-de-angular" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>version
+</pre></div>
+</div>
+<p>Muestra la versión de Angular CLI, Angular y otras dependencias relacionadas.</p>
+</section>
+<section id="desplegar-en-un-servidor">
+<h3>Desplegar en un servidor<a class="headerlink" href="#desplegar-en-un-servidor" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng<span class="w"> </span>deploy
+</pre></div>
+</div>
+<p>Despliega la aplicación a un servicio de hosting compatible como Firebase, Netlify, etc. Requiere configuración previa.</p>
+<hr class="docutils" />
+<p>¡Con estos comandos tendrás un resumen práctico para trabajar con Angular CLI de manera eficiente!</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="proyectoangular.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Crear un Proyecto en Angular</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="supabase.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Supabase: (Backend como Servicio)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-inicializacion">Comandos de Inicialización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-un-nuevo-proyecto">Crear un nuevo proyecto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ayuda">Ayuda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-desarrollo">Comandos de Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servidor-de-desarrollo">Servidor de desarrollo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-elementos-componentes-servicios-modulos-etc">Generar elementos (componentes, servicios, módulos, etc.)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadir-bibliotecas">Añadir bibliotecas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construccion-de-la-aplicacion">Construcción de la aplicación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-pruebas">Comandos de Pruebas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pruebas-unitarias">Pruebas unitarias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pruebas-end-to-end-e2e">Pruebas end-to-end (E2E)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-actualizacion">Comandos de Actualización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-angular-y-dependencias">Actualizar Angular y dependencias</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-linter">Comandos de Linter</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecutar-el-linter">Ejecutar el linter</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-depuracion-y-optimizacion">Comandos de Depuración y Optimización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analizar-el-tamano-del-bundle">Analizar el tamaño del bundle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#habilitar-analisis-en-tiempo-real">Habilitar análisis en tiempo real</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-configuracion">Comandos de Configuración</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurar-angular-cli">Configurar Angular CLI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-comandos-utiles">Otros Comandos Útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mostrar-la-version-de-angular">Mostrar la versión de Angular</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#desplegar-en-un-servidor">Desplegar en un servidor</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By bena-sudo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
