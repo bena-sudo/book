@@ -24,7 +24,7 @@ This repository is intended for:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/bena-sudo/book.git
+   git clone https://github.com/bena-sudo/frontend-book.git
    ```
 2. Install Jupyter Notebook or JupyterLab (if not already installed).
 3. Install Deno as the interpreter:
@@ -43,7 +43,7 @@ This repository is intended for:
    ```
 2. Build the book:
    ```bash
-   jupyter-book build .
+   jupyter-book build book
    ```
 
 Alternatively, a prebuilt version of this book is available and updated regularly at:
@@ -77,7 +77,7 @@ Este repositorio está destinado a:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/bena-sudo/book.git
+   git clone https://github.com/bena-sudo/frontend-book.git
    ```
 2. Instala Jupyter Notebook o JupyterLab (si aún no lo tienes instalado).
 3. Instala Deno como intérprete:
@@ -96,7 +96,7 @@ Este repositorio está destinado a:
    ```
 2. Construye el libro:
    ```bash
-   jupyter-book build .
+   jupyter-book build book
    ```
 
 Alternativamente, una versión preconstruida de este libro está disponible y se actualiza regularmente en:
